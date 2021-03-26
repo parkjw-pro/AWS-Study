@@ -55,9 +55,9 @@
 ### 8. 서버에 django 프로젝트를 업로드 ###
 
 
-- 여기에서는 설명을 위해서 django 프로젝트 이름을 backend 라고 하겠습니다.
-- backend 폴더 안에는 backend, manage.py, requirements.txt ... 등의 파일들이 있습니다.
-- FileZilla 와 같은 FTP 소프트웨어를 사용하여 backend 폴더를 통째로 /var/www/html/django/ 안에 넣습니다.
+- 여기에서는 설명을 위해서 django 프로젝트 이름을 backend 라고 하겠다.
+- backend 폴더 안에는 backend, manage.py, requirements.txt ... 등의 파일들이 있고,
+- FileZilla 와 같은 FTP 소프트웨어를 사용하여 backend 폴더를 통째로 /var/www/html/django/ 안에 넣는다.(참 간편하다)
 - 
 
 ### 9. 가상 환경에 패키지를 설치하기 위해 소스코드 폴더로 이동 ###
