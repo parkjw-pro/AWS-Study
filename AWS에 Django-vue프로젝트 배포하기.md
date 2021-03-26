@@ -58,7 +58,8 @@
 - 여기에서는 설명을 위해서 django 프로젝트 이름을 backend 라고 하겠다.
 - backend 폴더 안에는 backend, manage.py, requirements.txt ... 등의 파일들이 있고,
 - FileZilla 와 같은 FTP 소프트웨어를 사용하여 backend 폴더를 통째로 /var/www/html/django/ 안에 넣는다.(참 간편하다)
-- 
+- 여기서 나같은 경우는 /var/www/html/에 직접적으로 편집창을 열고 수정할 수 있는 기능이 ubuntu에는 없어서 root계정을 사용하기 위해
+- 제한을 푸는 대신, /home/ubuntu/폴더명 을 사용하여 ubuntu 유저가 권한이 있는 지역에 폴더를 만들었다.
 
 ### 9. 가상 환경에 패키지를 설치하기 위해 소스코드 폴더로 이동 ###
 
