@@ -1,4 +1,4 @@
-# AWS로 Django-vue 프로젝트 배포하기(도메인구입ver)
+# AWS로 Django프로젝트 배포하기
 -ssafy 서울캠퍼스 박종원
 
 
