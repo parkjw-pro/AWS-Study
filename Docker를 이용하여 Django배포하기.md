@@ -12,7 +12,7 @@ Docker를 이용하여 Django배포하기
 
 > Django는 python 기반의 웹 서버 개발 프레임워크입니다.
 > 
-> Django는 웹 서버 환경을 container 이미지로 만들어 배포하는 걸 오늘 목표로 하겠습니다.
+> Django 웹 서버 환경을 container 이미지로 만들어 배포하는 걸 오늘 목표로 하겠습니다.
 
 ### 준비 ###
 > Aws ubuntu 인스턴스(로컬도 가능)
