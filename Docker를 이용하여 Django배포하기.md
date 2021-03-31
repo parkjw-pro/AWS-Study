@@ -13,21 +13,16 @@ Docker를 이용하여 Django배포하기
 > Django는 python 기반의 웹 서버 개발 프레임워크입니다.
 > Django는 웹 서버 환경을 container 이미지로 만들어 배포하는 걸 오늘 목표로 하겠습니다.
 
-###준비###
+### 준비 ###
 > Aws ubuntu 인스턴스(로컬도 가능)
->
 > 인스턴스를 사용할 경우 보안그룹이 80(nginx) 및 개인의 Backend 프로젝트 포트 환경에 맞게 오픈 되어있어야 한다.
->
 > 일단 https 적용을 하지 않고 배포하는 것을 목표로 한다.
-> 
 > putty 대신 mobaxterm을 사용하여 서버 내 파일 구조를 조금 더 편하게 보았다.
->
 
 
 ### EC2에 도커 설치하기 ###
 
 - 아래의 명령어를 실행한다.
-
 ``` c
 $ sudo apt update
 $ sudo apt upgrade
@@ -45,21 +40,18 @@ $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add
 ```
 
 - stable repository 를 세팅하기 위한 명령어를 실행한다.
-
 ``` 
 $ sudo add-apt-repository "deb [arch=amd64]
 https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 ```
 
 - 가장 최신 버전의 Docker 엔진을 설치한다
-
 ``` 
 $ sudo apt update
 $ sudo apt install docker-ce docker-ce-cli containerd.io
 ```
 
 - 도커가 잘 설치되었는지 확인을 위해 버전확인을 해보자
-
 ``` 
 $ docker -v
 
@@ -67,13 +59,9 @@ $ docker -v
 
 ### 2. 도커 컨테이너 위에 Django 프로젝트 실행하기 ###
 
-- $ sudo apt-get update
-
-
 - 도커의 시작은 Dockerfile을 만드는 것입니다.(매우 중요)
-- 
 - 아래와 같은 폴더구조에서 도커 파일을 생성 할 텐데요,
-- 
+
 ![](/img/Dockerfile_dic.png)
 
 
