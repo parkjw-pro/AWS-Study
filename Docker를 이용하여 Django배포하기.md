@@ -26,12 +26,22 @@ Docker를 이용하여 Django배포하기
 
 ### EC2에 도커 설치하기 ###
 
-- $ ssh -i /path/my-key-pair.pem ubungu@my-instance-public-dns-name
+- 아래의 명령어를 실행한다.
+
 ``` c
 int val = 10;
-printf(%s,"Hello, World!");
+$ sudo apt upgrade
+```
+``` c
+$ sudo apt update
+$ sudo apt upgrade
 ```
 
+- 패키지를 설치해 준다.
+``` 
+$ sudo apt install apt-transport-https ca-certificates curl gnupg-agent
+software-properties-common
+```
 
 ### 2. 접속 후에 기존 패키지 업데이트 해주기 ###
 
