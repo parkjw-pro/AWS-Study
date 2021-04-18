@@ -25,6 +25,8 @@ Docker를 이용하여 Django배포하기
 
 - sudo docker rm <id> 컨테이너 삭제
 
+- sudo docker rm $(docker ps -a -q) 종료된 컨테이너 한번에 
+
 ### 준비 ###
 > Aws ubuntu 인스턴스(로컬도 가능)
 > 
